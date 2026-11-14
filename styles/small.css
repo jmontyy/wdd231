@@ -1,0 +1,184 @@
+:root {
+    --primary: #173f5f;
+    --bg: #eee;
+    --complete: #23834d;
+    font-family: "Poppins", sans-serif;
+    background: var(--bg);
+    box-sizing: border-box;
+}
+
+body { 
+    margin: 0; 
+    min-width: 320px;
+}
+
+
+header {
+    background: var(--primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .8rem 1rem;
+}
+
+#sitename {
+    color: inherit; 
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+#hamburger {
+    width: 44px;
+    height: 44px;
+    border: 1px solid #ffffff80;
+    border-radius: 6px;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+#hamburger span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: white;
+}
+
+#hamburger-menu {
+    display: none;
+    flex-direction: column;
+    background: var(--primary);
+    width: 100%;
+}
+
+#hamburger-menu.open {
+    display: flex;
+}
+
+#hamburger-menu a {
+    color: white;
+    text-decoration: none;
+    padding: .7rem .9rem;
+    border: 1px solid #ffffff30;
+}
+
+#hamburger-menu a.active {
+    font-weight: 700;
+}
+
+main { 
+    width: min(100% - 2rem, 1100px); 
+    margin: 1.5rem auto 2rem; 
+}
+
+h1 { 
+    color: var(--primary); 
+    margin: 0 0 1rem; 
+    font-size: 1.8rem; 
+}
+
+h2 { 
+    margin: 0 0 .8rem; 
+    color: var(--primary); 
+    font-size: 1.25rem; 
+}
+
+.home-layout 
+{ 
+    display: grid; 
+    gap: 1rem; 
+}
+
+.panel 
+{ 
+    background: white;  
+    padding: 1rem; 
+    min-width: 0; 
+}
+
+.about-panel p { 
+    margin: 0; 
+}
+
+.course-filters { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: .5rem; 
+}
+
+.filter-button {
+    border: 1px solid var(--primary);  
+    padding: .55rem .8rem;
+    background: white; 
+    color: var(--primary);
+    font-size: .9rem;
+}
+
+.filter-button.selected { 
+    background: var(--primary); 
+    color: white; 
+}
+
+.credit-total {  
+    font-weight: 600; 
+    margin: .9rem 0; 
+}
+
+#course-list { 
+    display: grid; 
+    grid-template-columns: 1fr;
+    gap: .65rem; 
+}
+
+.course-card { 
+    border: 2px solid var(--primary);
+    padding: .8rem; 
+}
+
+.course-card.completed { 
+    border: 2px solid var(--complete); 
+}
+
+.course-card h3 { 
+    margin: 0 0 .25rem; font-size: 1rem;
+}
+
+.course-card p { 
+    margin: 0; 
+    font-size: .9rem; 
+}
+.course-status { 
+    display: inline-block; 
+    margin-top: .4rem; 
+    font-size: .78rem; 
+    font-weight: 700; 
+    color: var(--complete); 
+}
+
+footer { 
+    background: var(--primary); 
+    color: white; 
+    text-align: center; 
+    padding: 1.2rem 1rem; 
+}
+.social-links { 
+    display: flex; 
+    justify-content: center; 
+    gap: 1rem; 
+    margin-bottom: .6rem; 
+}
+    
+.social-links svg { 
+    width: 21px; 
+    height: 21px; 
+    fill: white;
+}
+

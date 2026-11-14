@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Josh Montgomery's WDD 231 Web Frontend Development I course homepage.">
+    <meta name="author" content="Josh Montgomery">
+    <title>Home | Josh Montgomery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+</head>
+<body>
+<header>
+    <a id="sitename" href="index.html">
+        <span>Josh Montgomery WDD231</span>
+    </a>
+
+    <button id="hamburger"
+        type="button">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+</header>
+
+<nav id="hamburger-menu">
+    <a href="index.html" class="active">Home</a>
+    <a href="../chamber/index.html">Chamber Project</a>
+    <a href="../project/index.html">Final Project</a>
+</nav>
+
+    <main>
+        <h1>Home</h1>
+        <div class="home-layout">
+            <section class="panel about-panel">
+                <h2>About Me</h2>
+                <p>I'm Josh Montgomery, I work in web app development and am pursuing a degree in Software Development</p>
+            </section>
+
+            <section class="panel photo-panel">
+                <h2>Student Photo</h2>
+                <img src="images/profile.jpg" ></img>
+            </section>
+
+            <section class="panel class-panel">
+                <h2>Web Certificate Courses</h2>
+                <div class="course-filters" role="group">
+                    <button type="button" class="filter-button selected" data-filter="all">All Courses</button>
+                    <button type="button" class="filter-button" data-filter="WDD" >WDD Courses</button>
+                    <button type="button" class="filter-button" data-filter="CSE">CSE Courses</button>
+                </div>
+                <p id="credit-total">Credits displayed: 0</p>
+                <div id="course-list">
+                    <p class="course-message">Add the official course list to scripts/courses.js to display your courses.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="social-links">
+            <a href="https://github.com/jmontyy/wdd231">
+                <svg viewBox="0 0 24 24"><path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.55.1.76-.24.76-.54v-2.08c-3.1.67-3.75-1.32-3.75-1.32-.5-1.28-1.24-1.62-1.24-1.62-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15 1 .1.75 2.2 3.32 1.55.1-.72.4-1.2.72-1.48-2.47-.28-5.07-1.24-5.07-5.5 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .94-.3 3.05 1.15a10.6 10.6 0 0 1 5.55 0c2.11-1.44 3.05-1.15 3.05-1.15.61 1.54.23 2.68.11 2.96.72.78 1.15 1.78 1.15 3 0 4.27-2.6 5.21-5.08 5.49.4.35.76 1.02.76 2.06v3.05c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z"/></svg>
+            </a>
+        </div>
+        <p class="copyright">© <span id="currentyear"></span> Josh Montgomery · Texas, USA</p>
+        <p id="lastModified" class="last-modified">Last modified: </p>
+    </footer>
+</body>
+</html>
