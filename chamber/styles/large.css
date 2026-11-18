@@ -1,0 +1,74 @@
+@media (min-width: 640px) {
+    .header-top { 
+        padding: 0.75rem 1.5rem; 
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .main-nav {
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 0 1rem 0.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 0.5rem;
+        border-top: 0;
+    }
+    .main-nav a {
+        padding: 0.45rem 0.8rem;
+    }
+
+    .business-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .business-list .business-card {
+        grid-template-columns: minmax(180px, 0.8fr) 2fr;
+        align-items: center;
+    }
+    
+    .business-list .tagline {
+        border: 0;
+        padding-bottom: 0.4rem;
+    }
+
+    .business-list .card-details {
+        grid-column: 2; grid-row: 1 / span 2;
+    }
+
+    .business-list .member-image {
+        display: block;
+    }
+
+    footer {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .social-links {
+        justify-content: center;
+    
+    }
+
+    .footer-project {
+        text-align: left;
+    }
+}
+
+@media (min-width: 920px) {
+    .business-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    main {
+        padding-top: 0.65rem;
+    }
+
+    footer {
+        gap: 2rem;
+    }
+}

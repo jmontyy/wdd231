@@ -1,0 +1,280 @@
+:root {
+    --blue: #003da5;
+    --red: #e31837;
+    --headerbg: #f0f2f6;
+}
+
+* { 
+    box-sizing: border-box; 
+}
+body { 
+    margin: 0; 
+}
+img, svg { 
+    vertical-align: middle;
+}
+button, input { 
+    font: inherit; 
+}
+
+a { 
+    background-color: transparent; 
+}
+
+body {
+    margin: 0;
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.45;
+}
+
+header {
+    background: var(--headerbg);
+    border-bottom: 4px solid var(--red);
+}
+
+.header-top {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0.7rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    color: var(--blue);
+    font-size: 1.05rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.brand img { display: block; }
+
+.nav-toggle {
+    width: 44px;
+    height: 40px;
+    padding: 8px;
+    border: 1px solid var(--blue);
+    border-radius: 4px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.nav-toggle span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: var(--blue);
+}
+
+.main-nav {
+    display: none;
+    flex-direction: column;
+    border-top: 1px solid #cbd2df;
+}
+
+.main-nav.open { 
+    display: flex; 
+}
+
+.main-nav a {
+    padding: 0.75rem 1rem;
+    color: var(--blue);
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.main-nav a:hover,
+.main-nav a.selected {
+    color: var(--red);
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+main {
+    max-width: 1120px;
+    min-height: 60vh;
+    margin: 0 auto;
+    padding: 0.5rem 1rem 1.5rem;
+}
+
+h1 {
+    margin: 0.2rem 0 1.1rem;
+    color: var(--blue);
+    font-size: 1.7rem;
+}
+
+.hflex {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.2rem 0;
+}
+
+.hflex button {
+    min-width: 90px;
+    padding: 0.35rem 1rem;
+    border: 1px solid var(--blue);
+    border-radius: 2px;
+    color: var(--blue);
+    background: white;
+    cursor: pointer;
+}
+
+.hflex button.selected {
+    color: white;
+    background: var(--blue);
+}
+
+.business-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.business-card {
+    overflow: hidden;
+    border-radius: 8px;
+    background: #e7e9ee;
+    box-shadow: 0 1px 3px;
+}
+
+.business-card h2 {
+    margin: 0;
+    padding: 0.35rem 0.5rem 0;
+    color: var(--blue);
+    text-align: center;
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.tagline {
+    margin: 0;
+    padding: 0 0.5rem 0.35rem;
+    border-bottom: 1px solid gray;
+    text-align: center;
+    font-size: 0.82rem;
+}
+
+.card-details {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 0.55rem;
+}
+
+.member-image {
+    width: 76px;
+    height: 76px;
+    flex: 0 0 76px;
+    object-fit: contain;
+    background: white;
+    border: 1px solid var(--headerbg);
+}
+
+.member-info {
+    min-width: 0;
+    margin: 0;
+    font-size: 0.82rem;
+    overflow-wrap: anywhere;
+}
+
+.member-info p { 
+    margin: 0 0 0.3rem; 
+}
+
+.member-info a { 
+    color: var(--blue); 
+}
+
+.membership { 
+    font-size: 0.75rem; 
+}
+
+.business-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+}
+
+.business-list .business-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    border-left: 5px solid var(--blue);
+    border-radius: 3px;
+}
+
+.business-list .business-card h2 { 
+    text-align: left; 
+    padding: 0.45rem 0.65rem 0;
+}
+.business-list .tagline { 
+    text-align: left; 
+    padding-left: 0.65rem;
+}
+.business-list .card-details { 
+    align-items: center;
+}
+.business-list .member-image { 
+    display: none;
+}
+
+.loading { 
+    text-align: center;
+    grid-column: 1 / -1;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 1.2rem max(1rem, calc((100% - 1120px) / 2));
+    background: var(--blue);
+    color: white;
+    border-top: 5px solid var(--red);
+}
+
+footer p { 
+    margin: 0.15rem 0;
+}
+
+footer a {
+    color: white; 
+}
+
+.footer-contact, .footer-project {
+    font-size: 0.9rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.social-links a {
+    width: 42px;
+    height: 42px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: white;
+}
+
+.social-links svg {
+    width: 22px;
+    height: 22px;
+    fill: var(--blue);
+}
+
+[hidden] { 
+    display: none !important;
+}

@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Trinity River Roasters",
+        "tagline": "Locally roasted coffee and community",
+        "address": "1420 Dragon St, Dallas, TX 75207",
+        "phone": "(214) 555-0148",
+        "url": "https://example.com",
+        "img": "trinity.jpg",
+        "level": 3,
+        "email": "hello@example.com"
+    },
+    {
+        "name": "Deep Ellum Sound & Lighting",
+        "tagline": "Professional audio and event production",
+        "address": "2814 Main St, Dallas, TX 75226",
+        "phone": "(214) 555-0192",
+        "url": "https://example.com",
+        "img": "ellum.webp",
+        "level": 2,
+        "email": "info@example.com"
+    },
+    {
+        "name": "Lone Star Logistics Group",
+        "tagline": "Moving Dallas business forward",
+        "address": "4500 Harry Hines Blvd, Dallas, TX 75219",
+        "phone": "(972) 555-0114",
+        "url": "https://example.com",
+        "img": "lonestar.png",
+        "level": 3,
+        "email": "team@example.com"
+    },
+    {
+        "name": "Bishop Arts Botanicals",
+        "tagline": "Plants, gifts, and neighborhood charm",
+        "address": "408 N Bishop Ave, Dallas, TX 75208",
+        "phone": "(214) 555-0173",
+        "url": "https://example.com",
+        "img": "bishop.jpg",
+        "level": 1,
+        "email": "hello@example.com"
+    },
+    {
+        "name": "Uptown Cyber Defense",
+        "tagline": "Practical security for modern businesses",
+        "address": "2501 N Harwood St, Suite 1400, Dallas, TX 75201",
+        "phone": "(469) 555-0165",
+        "url": "https://example.com",
+        "img": "cyber.webp",
+        "level": 3,
+        "email": "support@example.com"
+    },
+    {
+        "name": "White Rock Outdoor Outfitters",
+        "tagline": "Gear up for your next adventure",
+        "address": "8915 Garland Rd, Dallas, TX 75218",
+        "phone": "(214) 555-0181",
+        "url": "https://example.com",
+        "img": "whiterock.jpg",
+        "level": 2,
+        "email": "shop@example.com"
+    },
+    {
+        "name": "Pegasus Skyline Architects",
+        "tagline": "Designing spaces with a Dallas point of view",
+        "address": "1717 McKinney Ave, Suite 800, Dallas, TX 75202",
+        "phone": "(972) 555-0139",
+        "url": "https://example.com",
+        "img": "pegasus.jpg",
+        "level": 1,
+        "email": "studio@example.com"
+    }
+]
