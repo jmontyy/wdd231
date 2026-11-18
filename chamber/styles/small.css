@@ -7,9 +7,7 @@
 * { 
     box-sizing: border-box; 
 }
-body { 
-    margin: 0; 
-}
+
 img, svg { 
     vertical-align: middle;
 }
@@ -276,5 +274,5 @@ footer a {
 }
 
 [hidden] { 
-    display: none !important;
+    display: none;
 }
