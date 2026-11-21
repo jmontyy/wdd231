@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Connect with Dallas businesses, explore local events, and discover opportunities through the Faux Dallas Chamber of Commerce.">
+    <meta name="author" content="Josh Montgomery">
+
+    <meta property="og:title" content="Home | Faux Dallas Chamber of Commerce">
+    <meta property="og:description" content="Connect with Dallas businesses, explore local events, and discover opportunities through the Faux Dallas Chamber of Commerce.">
+    <meta property="og:image" content="https://jmontyy.github.io/wdd231/chamber/images/members/lonestar.png">
+    <meta property="og:url" content="https://jmontyy.github.io/wdd231/chamber/index.html">
+    <meta property="og:type" content="website">
+
+    <title>Home | Faux Dallas Chamber of Commerce</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <a class="brand" href="index.html">
+                <img src="images/favicon.ico" alt="" width="42" height="42">
+                <span>Faux Dallas Chamber of Commerce</span>
+            </a>
+            <button class="nav-toggle" type="button">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <nav id="main-nav" class="main-nav">
+            <a href="index.html" class="selected">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="discover.html">Discover</a>
+        </nav>
+    </header>
+
+    <main class="home-main">
+        <section class="hero" aria-label="Welcome to Dallas">
+            <img src="images/skyline.webp">
+            <div class="hero-content">
+                <p class="eyebrow">Local connections. Stronger community.</p>
+                <h1>Building a Better Dallas, Together.</h1>
+                <p>Discover local businesses, make meaningful connections, and help our community thrive.</p>
+                <a class="cta-button" href="join.html">Join the Chamber</a>
+            </div>
+        </section>
+
+        <div class="home-sections">
+            <section class="home-panel events-panel">
+                <h2>Upcoming Events</h2>
+                <article class="event-item">
+                    <div class="event-date"><span>DEC</span><strong>03</strong></div>
+                    <div>
+                        <h3>Dallas Business Connect</h3>
+                        <p>Meet local owners and build new professional connections.</p>
+                        <p class="event-meta">Thursday, December 3 · 5:30 PM</p>
+                    </div>
+                </article>
+                <article class="event-item">
+                    <div class="event-date"><span>DEC</span><strong>10</strong></div>
+                    <div>
+                        <h3>Small Business Growth Workshop</h3>
+                        <p>Practical ideas for marketing, planning, and growing your business.</p>
+                        <p class="event-meta">Thursday, December 10 · 11:30 AM</p>
+                    </div>
+                </article>
+                <article class="event-item">
+                    <div class="event-date"><span>DEC</span><strong>17</strong></div>
+                    <div>
+                        <h3>Holiday Member Mixer</h3>
+                        <p>Celebrate the season with fellow chamber members.</p>
+                        <p class="event-meta">Thursday, December 17 · 6:00 PM</p>
+                    </div>
+                </article>
+            </section>
+
+            <section class="home-panel weather-panel">
+                <h2>Dallas Weather</h2>
+                <p class="weather-location">Dallas, Texas</p>
+                <div id="current-weather" class="current-weather">
+                    <p>Loading current weather...</p>
+                </div>
+                <h3 class="forecast-heading">3-Day Forecast</h3>
+                <div id="weather-forecast" class="weather-forecast">
+                    <p>Loading forecast...</p>
+                </div>
+            </section>
+        </div>
+
+        <section class="spotlights-section">
+            <div class="section-heading">
+                <h2>Member Spotlights</h2>
+                <p>Meet a few of the businesses that make our Dallas community thrive.</p>
+            </div>
+            <div id="spotlights" class="spotlights-grid" aria-live="polite">
+                <p class="loading">Loading chamber members...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-contact">
+            <p><strong>Faux Dallas Chamber of Commerce</strong></p>
+            <p>10 Main St</p>
+            <p>Dallas, TX 75201</p>
+            <p>example@example.com</p>
+            <p>(214) 153-1474</p>
+        </div>
+        <div class="social-links">
+            <a href="https://www.youtube.com/">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.2 3.6-6.2 3.6Z"/></svg>
+            </a>
+            <a href="https://x.com/">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3L12 14.6 5.6 22H2.4l7.3-8.4L1.9 2h6.5l4.4 6.9L18.9 2Zm-1.1 18h1.7L7.4 3.9H5.6L17.8 20Z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 2H3.6A1.6 1.6 0 0 0 2 3.6v16.8A1.6 1.6 0 0 0 3.6 22h16.8a1.6 1.6 0 0 0 1.6-1.6V3.6A1.6 1.6 0 0 0 20.4 2ZM8 18.8H5V9.2h3v9.6ZM6.5 7.9a1.7 1.7 0 1 1 0-3.4 1.7 1.7 0 0 1 0 3.4Zm12.3 10.9h-3v-4.7c0-1.1 0-2.5-1.5-2.5s-1.8 1.2-1.8 2.4v4.8h-3V9.2h2.9v1.3h.1a3.2 3.2 0 0 1 2.8-1.5c3 0 3.5 2 3.5 4.5v5.3Z"/></svg>
+            </a>
+        </div>
+        <div class="footer-project">
+            <p>WDD 231 Class Project</p>
+            <p>Josh Montgomery</p>
+            <p>© <span id="current-year"></span> Faux Dallas Chamber of Commerce</p>
+            <p id="lastModified" class="last-modified">Last modified: </p>
+        </div>
+    </footer>
+</body>
+</html>
