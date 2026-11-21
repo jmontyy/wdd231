@@ -29,7 +29,7 @@ img, svg {
 }
 
 [hidden] {
-    display: none !important;
+    display: none;
 }
 
 .business-card {
